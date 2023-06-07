@@ -33,6 +33,7 @@ button {
   background-color: white;
   width: 50%;
   height: 50%;
+  flex-wrap: wrap;
 }
 #list div {
   padding: 0.1vh;
@@ -54,8 +55,5 @@ button {
   .content {
     width: 90%;
     height: 70%;
-  }
-  #list {
-    flex-wrap: wrap;
   }
 }
