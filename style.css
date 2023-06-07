@@ -5,6 +5,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1em;
 }
 div {
   display: flex;
@@ -21,8 +22,8 @@ button {
 .content {
   justify-content: space-evenly;
   flex-direction: column;
-  width: 30%;
-  height: 40%;
+  width: 60%;
+  height: 60%;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -31,7 +32,30 @@ button {
   flex-direction: column;
   background-color: white;
   width: 50%;
+  height: 50%;
 }
 #list div {
   padding: 0.1vh;
+}
+
+@media only screen and (max-width: 700px) {
+  .content {
+    width: 90%;
+    height: 70%;
+  }
+  #list {
+    width: 80%;
+  }
+  h1 {
+    font-size: larger;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .content {
+    width: 90%;
+    height: 70%;
+  }
+  #list {
+    flex-wrap: wrap;
+  }
 }
